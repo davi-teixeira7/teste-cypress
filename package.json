@@ -1,0 +1,22 @@
+{
+  "name": "projeto-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:backend",
+    "start:backend": "node backend/server.js",
+    "start:frontend": "http-server frontend -p 3000 -c-1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "npm run cypress:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^15.6.0",
+    "http-server": "^14.1.1"
+  }
+}

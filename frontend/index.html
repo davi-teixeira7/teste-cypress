@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login simples</title>
+</head>
+<body>
+  <main>
+    <section id="login-view">
+      <h1>Página de Login</h1>
+      <form id="login-form" novalidate>
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="username" required />
+          <div id="email-error" role="alert"></div>
+        </div>
+
+        <div>
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required />
+          <div id="password-error" role="alert"></div>
+        </div>
+
+        <button type="submit" data-testid="login-submit" disabled>Entrar</button>
+      </form>
+      <div id="login-message" role="alert"></div>
+    </section>
+
+    <section id="home-view" hidden>
+      <h1>Bem-vindo</h1>
+      <p id="home-message"></p>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
